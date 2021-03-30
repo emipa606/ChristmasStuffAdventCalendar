@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Plants-->
+  <ThingDef ParentName="PlantBase">
+    <defName>CSParsnipPlant</defName>
+    <label>Parsnip</label>
+    <graphicData>
+      <texPath>Things/18th/PlantParsnip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>A plant producing parsnip.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.18</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <harvestTag>Standard</harvestTag>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestedThingDef>CSRawParsnips</harvestedThingDef>
+      <harvestYield>11</harvestYield>
+      <growDays>5</growDays>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowMinSkill>4</sowMinSkill>
+      <dieIfLeafless>true</dieIfLeafless>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.4~1.1</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>CSCarrotPlant</defName>
+    <label>Carrot</label>
+    <graphicData>
+      <texPath>Things/18th/PlantCarrot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>A plant producing carrot.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.18</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <harvestTag>Standard</harvestTag>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestedThingDef>CSRawCarrots</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <growDays>5</growDays>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowMinSkill>4</sowMinSkill>
+      <dieIfLeafless>true</dieIfLeafless>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.4~1.1</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <!--Items-->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>CSRawParsnips</defName>
+    <label>Parsnip</label>
+    <description>Parsnips.</description>
+    <graphicData>
+      <texPath>Things/18th/Parsnip</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>CSRawCarrots</defName>
+    <label>Carrot</label>
+    <description>Carrots.</description>
+    <graphicData>
+      <texPath>Things/18th/Carrot</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>CSCheese</defName>
+    <label>Cheese</label>
+    <description>Cheese is a food made from milk..</description>
+    <graphicData>
+      <texPath>Things/18th/Cheese</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>6.7</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>Meal</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+  </ThingDef>
+  <!--Side dish-->
+  <ThingDef ParentName="MealCooked">
+    <defName>CSCandiedCarrots</defName>
+    <label>Candied carrots</label>
+    <description>Carrots sweetened with sugar.</description>
+    <graphicData>
+      <texPath>Things/18th/CandiedCarrots</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>200</WorkToMake>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>CSRoastedParsnips</defName>
+    <label>Roasted parsnips</label>
+    <description>Roasted parsnips.</description>
+    <graphicData>
+      <texPath>Things/18th/RoastedParsnip</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>200</WorkToMake>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>CSHasselbackPotatoes</defName>
+    <label>Hasselback potatoes</label>
+    <description>Hasselback potatoes are halfway cut through into thin slices.</description>
+    <graphicData>
+      <texPath>Things/18th/HasselbackPotatoes</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>200</WorkToMake>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_CandiedCarrots</defName>
+    <label>make candied carrots</label>
+    <description>Make candied carrots.</description>
+    <jobString>Preparing christmas dinner.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>200</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawCarrots</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSCandiedCarrots>1</CSCandiedCarrots>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_RoastedParsnips</defName>
+    <label>make roasted parsnips</label>
+    <description>Make roasted parsnips.</description>
+    <jobString>Preparing christmas dinner.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>180</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawParsnips</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSRoastedParsnips>1</CSRoastedParsnips>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_HasselbackPotatoes</defName>
+    <label>make hasselback potatoes</label>
+    <description>Make hasselback potatoes.</description>
+    <jobString>Preparing christmas dinner.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>220</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSCheese</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSHasselbackPotatoes>1</CSHasselbackPotatoes>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_Cheese</defName>
+    <label>make cheese</label>
+    <description>Make cheese.</description>
+    <jobString>Making cheese.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>200</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSCheese>8</CSCheese>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

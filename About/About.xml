@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Christmas Stuff - Advent calendar (Continued)</name>
+  <packageId>Mlie.ChristmasStuffAdventCalendar</packageId>
+  <author>FantasyFan</author>
+  <url>https://github.com/emipa606/ChristmasStuffAdventCalendar</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>syrchalis.universalfermenter</packageId>
+      <displayName>[SYR] Universal Fermenter</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2073225100</steamWorkshopUrl>
+      <downloadUrl>https://github.com/Syrchalis/UniversalFermenter</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>syrchalis.universalfermenter</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of FantasyFans mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1925575754
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/ChristmasStuffAdventCalendar][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+Have you ever wanted to have christmas/xmas stuff in Rimworld. Now you can.
+
+This mod adds 24 different things:
+- 01 [Advent calendar]
+- 02 [Glühwein: grapes, red wine, cinnamon, sugar, star anise]
+- 03 [Christmas cake: flour]
+- 04 [Advent wreath]
+- 05 [Antler hat]
+- 06 [Furniture set 1]
+- 07 [Cookies]
+- 08 [Hot chocolate]
+- 09 [Candy cane]
+- 10 [Christmas lighting: glas bulb]
+- 11 [Fireplace]
+- 12 [Eggnog: sugar cane, rum]
+- 13 [Stollen: almond, raisins]
+- 14 [Gingerbread: ginger, icing, gingerbread house]
+- 15 [Gingerbread structures]
+- 16 [Santa meal]
+- 17 [Christmas pudding]
+- 18 [Side dishes: candied carrots, roasted parsnips, hasselback potatoes]
+- 19 [Roasted turkey]
+- 20 [Presents: blue, green, red]
+- 21 [Christmas tree]
+- 22 [Furniture set 2]
+- 23 [Santa outfit]
+- 24 [Christmas sleigh - WIP]
+
+
+
+Can be safely added to existing saves.
+
+
+If you find things unbalanced, please make suggestions for improvement.
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
+

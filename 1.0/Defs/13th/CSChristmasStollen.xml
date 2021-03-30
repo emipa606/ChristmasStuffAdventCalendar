@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Tree-->
+  <ThingDef ParentName="TreeBase">
+    <defName>CSAlmondTree</defName>
+    <label>Almond tree</label>
+    <description>A tree producing almonds.</description>
+    <graphicData>
+      <texPath>Things/13th/TreeAlmond</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <statBases>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible />
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <growDays>12</growDays>
+      <visualSizeRange>
+        <min>0.8</min>
+        <max>2.0</max>
+      </visualSizeRange>
+      <sowMinSkill>5</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.15</topWindExposure>
+      <mustBeWildToSow>false</mustBeWildToSow>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestYield>20</harvestYield>
+      <harvestedThingDef>CSRawAlmond</harvestedThingDef>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+  </ThingDef>
+  <!--Items-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSRawAlmond</defName>
+    <label>Almond</label>
+    <description>A drupe from the almond tree. (It's not a nut)</description>
+    <graphicData>
+      <texPath>Things/13th/Almond</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>CSFoodCat</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSRaisins</defName>
+    <label>Raisins</label>
+    <description>Dried grapes.</description>
+    <graphicData>
+      <texPath>Things/13th/Raisins</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1.7</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>CSFoodCat</li>
+    </thingCategories>
+  </ThingDef>
+  <!--Christmas Stollen-->
+  <ThingDef ParentName="MealRottable">
+    <defName>CSStollen</defName>
+    <label>Stollen</label>
+    <description>Stollen is a fruit bread of nuts, spices, and dried or candied fruit, coated with powdered sugar or icing sugar. It is a traditional German bread eaten during the Christmas season</description>
+    <graphicData>
+      <texPath>Things/13th/ChristmasStollen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>300</WorkToMake>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAteStollen</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteStollen</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate stollen</label>
+        <description>Yummy. That was delicioius.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_Stollen</defName>
+    <label>make stollen</label>
+    <description>Make plain stollen.</description>
+    <jobString>Making stollen.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSFlour</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawCinnamon</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawAlmond</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRaisins</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSStollen>8</CSStollen>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_Raisins</defName>
+    <label>dry grapes into raisins</label>
+    <description>Dry grapes into raisins.</description>
+    <jobString>Drying grapes.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawGrapes</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CSRawGrapes</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CSRaisins>20</CSRaisins>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

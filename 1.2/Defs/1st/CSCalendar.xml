@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>CSCalendar</defName>
+    <label>Advent calendar</label>
+    <graphicData>
+      <texPath>Things/1st/CSCalendar</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.1,1.1</drawSize>
+    </graphicData>
+    <uiIconPath>Things/1st/CSCalendar_UI</uiIconPath>
+    <description>a special calendar used to count the days of Advent. Starting at the 1st of december.</description>
+    <thingClass>Building</thingClass>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>2</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Cloth>5</Cloth>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <building>
+      <isEdifice>false</isEdifice>
+      <!--<canPlaceOverWall>true</canPlaceOverWall>
+	  <isInert>true</isInert>
+	  <ai_chillDestination>false</ai_chillDestination>-->
+    </building>
+    <tickerType>Never</tickerType>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <destroyable>true</destroyable>
+    <isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+    <clearBuildingArea>false</clearBuildingArea>
+    <defaultPlacingRot>South</defaultPlacingRot>
+  </ThingDef>
+</Defs>

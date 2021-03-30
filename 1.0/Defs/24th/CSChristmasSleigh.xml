@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Items-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSChristmasSpirit</defName>
+    <label>Christmas spirit</label>
+    <description>The spirit of christmas. It can be used as fuel for the christmas sleigh.</description>
+    <graphicData>
+      <texPath>Things/24th/ChristmasSpirit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSSkid</defName>
+    <label>Skid</label>
+    <description>Some Skids for santa claus's christmas sleigh.</description>
+    <graphicData>
+      <texPath>Things/24th/Skids</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>45</MarketValue>
+      <Mass>0.8</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSPresentBag</defName>
+    <label>Present bag</label>
+    <description>A magical bag for transporting presents.</description>
+    <graphicData>
+      <texPath>Things/24th/PresentBag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSSleighCore</defName>
+    <label>Sleigh core</label>
+    <description>The core of the christmas sleigh.</description>
+    <graphicData>
+      <texPath>Things/24th/SleighCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>24</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <!--Recipe-->
+  <RecipeDef>
+    <defName>CSMake_Skids</defName>
+    <label>smith skids</label>
+    <description>smith skids.</description>
+    <jobString>Smithing skids.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>5000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSSkid>1</CSSkid>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_PresentBag</defName>
+    <label>tailor present bag</label>
+    <description>Tailor present bag.</description>
+    <jobString>Tailoring.</jobString>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1800</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Leathers</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSPresentBag>1</CSPresentBag>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Leathers</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_SleighCore</defName>
+    <label>smith sleigh core</label>
+    <description>smith sleigh core.</description>
+    <jobString>Smithing sleigh core.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>5000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSChristmasSpirit</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSSleighCore>1</CSSleighCore>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!--======================Sleigh======================-->
+  <!--Sleigh-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CSChristmasSleigh</defName>
+    <label>Christmas sleigh</label>
+    <description>A flying sleigh for transporting present during christmas. Can transport 1000kg. Use christmas spirit as fuel.\n\nDoes not work.</description>
+    <graphicData>
+      <texPath>Things/24th/ChristmasSleigh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <size>(3,2)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>150</WoodLog>
+      <CSPresentBag>2</CSPresentBag>
+      <CSSkid>2</CSSkid>
+      <CSSleighCore>1</CSSleighCore>
+      <CSChristmasSpirit>50</CSChristmasSpirit>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.8</restEffectiveness>
+        <massCapacity>1000</massCapacity>
+      </li>
+      <li Class="CompProperties_Launchable" />
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>350.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>CSChristmasSpirit</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_TransporterContents</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <!--<li>PlaceWorker_NeedsFuelingPort</li>-->
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>TransportPod</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <uiIconScale>0.65</uiIconScale>
+  </ThingDef>
+  <!--Traveling Sleigh-->
+  <!--<WorldObjectDef>
+    <defName>TravelingSleigh</defName>
+    <label>christmas sleigh</label>
+    <description>christmas sleigh in flight.</description>
+    <worldObjectClass>TravelingTransportPods</worldObjectClass>
+    <texture>World/WorldObjects/TravelingTransportPods</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>Things/14th/WorldChristmasSleigh</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+  </WorldObjectDef>
+  
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>CSSleigh_Incoming</defName>
+    <label>sleigh (incoming)</label>
+		<thingClass>DropPodIncoming</thingClass>
+    <graphicData>
+      <texPath>Things/24th/ChristmasSleigh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(6,6)</shadowSize>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <anticipationSoundTicks>100</anticipationSoundTicks>
+      <motesPerCell>0</motesPerCell>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>CSSleigh_Leaving</defName>
+    <label>sleigh (leaving)</label>
+		<thingClass>DropPodLeaving</thingClass>
+    <graphicData>
+	  <texPath>Things/24th/ChristmasSleigh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <reversed>true</reversed>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(6,6)</shadowSize>
+      <anticipationSound>DropPod_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>CSSleigh_Active</defName>
+    <label>sleigh</label>
+    <category>Item</category>
+    <thingClass>ActiveDropPod</thingClass>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/24th/ChristmasSleigh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <shadowData>
+        <volume>(0.8, 0.6, 0.8)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <blockWind>true</blockWind>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+  </ThingDef>-->
+</Defs>

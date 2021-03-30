@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Cookies-->
+  <ThingDef ParentName="MealCooked">
+    <defName>CSSantaMeal</defName>
+    <label>Santa meal</label>
+    <description>Prepare some cookies with milk for santa claus.</description>
+    <graphicData>
+      <texPath>Things/16th/SantaMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>350</WorkToMake>
+      <Nutrition>0.7</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.5</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>MealFine</preferability>
+      <tasteThought>CSAteSantaMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteSantaMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate santa meal</label>
+        <description>That santa meal was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_SantaMeal</defName>
+    <label>make santa meal</label>
+    <description>Make santa meal.</description>
+    <jobString>Making santa meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>15</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>CSCookieCat</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSSantaMeal>1</CSSantaMeal>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CSCookieCat</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Add to Vanilla -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed" or defName="HospitalBed"]/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities</xpath>
+        <value>
+          <li>CSCEndTable</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed" or defName="HospitalBed"]/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities</xpath>
+        <value>
+          <li>CSCDresser</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

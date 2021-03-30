@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Candy Cane-->
+  <ThingDef ParentName="MealRottable">
+    <defName>CSCandyCane</defName>
+    <label>Candy cane</label>
+    <description>Sweet. A candy cane is a cane-shaped stick candy and it is traditionally white with red stripes</description>
+    <graphicData>
+      <texPath>Things/9th/CandyCane</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>350</WorkToMake>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.3</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAteCandyCane</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteCandyCane</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate candy cane</label>
+        <description>Sweet.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipe-->
+  <RecipeDef>
+    <defName>CSMake_CandyCane</defName>
+    <label>make candy cane</label>
+    <description>Make candy cane.</description>
+    <jobString>Making candy cane.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>350</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSCandyCane>3</CSCandyCane>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

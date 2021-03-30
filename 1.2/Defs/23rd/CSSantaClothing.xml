@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Santa Hat-->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>CSApparel_SantaHat</defName>
+    <label>Santa hat</label>
+    <description>A soft, thick cap in christmas style. Great for keeping warm in winter.</description>
+    <graphicData>
+      <texPath>Things/23rd/SantaHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <CSSantaCloth>25</CSSantaCloth>
+    </costList>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/23rd/SantaHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  <!--Santa Robe-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>CSApparel_SantaRobe</defName>
+    <label>Santa robe</label>
+    <description>Santa's robe. Great for staying warm in even the coldest of temperatures.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <CSSantaCloth>85</CSSantaCloth>
+    </costList>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>3.8</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>(152,36,36)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  <!--Items-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSSantaCloth</defName>
+    <label>Santa cloth</label>
+    <description>Red cloth woven from organic fibers.</description>
+    <graphicData>
+      <texPath>Things/23rd/SantaCloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>17</StuffPower_Insulation_Heat>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>2.2</MarketValue>
+      <Mass>0.028</Mass>
+      <Flammability>1.2</Flammability>
+      <DeteriorationRate>3.6</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <Flammability>1.3</Flammability>
+      </statFactors>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(152,36,36)</color>
+      <commonality>0.12</commonality>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_SantaCloth</defName>
+    <label>make santa cloth</label>
+    <description>Make santa cloth from cloth</description>
+    <jobString>Making cloth.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>900</workAmount>
+    <targetCountAdjustment>50</targetCountAdjustment>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSSantaCloth>40</CSSantaCloth>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

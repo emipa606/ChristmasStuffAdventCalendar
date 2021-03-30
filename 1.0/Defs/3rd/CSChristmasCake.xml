@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Plant-->
+  <ThingDef ParentName="PlantBase">
+    <defName>CSWheat</defName>
+    <label>Wheat</label>
+    <graphicData>
+      <texPath>Things/3rd/PlantWheatMature</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>A plant producing wheat for flour making.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.18</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <harvestTag>Standard</harvestTag>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestedThingDef>CSRawWheat</harvestedThingDef>
+      <immatureGraphicPath>Things/3rd/PlantWheat</immatureGraphicPath>
+      <harvestYield>9</harvestYield>
+      <growDays>6</growDays>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>4</sowMinSkill>
+      <dieIfLeafless>true</dieIfLeafless>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>0.8</max>
+      </visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <!--Items-->
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>CSRawWheat</defName>
+    <label>Wheat</label>
+    <description>Wheat is a grass widely cultivated for its seed. These can be turned into flour at the butcher table.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>Things/3rd/Wheat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.012</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CSFlour</defName>
+    <label>Flour</label>
+    <description>A pulver used for baking.</description>
+    <graphicData>
+      <texPath>Things/3rd/Flour</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>CSFoodCat</li>
+    </thingCategories>
+  </ThingDef>
+  <!--Cake-->
+  <ThingDef ParentName="MealRottable">
+    <defName>CSCCake</defName>
+    <label>Christmas cake</label>
+    <description>A masterpiece of the culinary arts, this cake nourishes the body, mind, and soul.</description>
+    <graphicData>
+      <texPath>Things/3rd/CCake</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <WorkToMake>800</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>CSAteCCake</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteCCake</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate cake</label>
+        <description>That christmas cake was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_CCake</defName>
+    <label>make christmas cake</label>
+    <description>Make christmas cake.</description>
+    <jobString>Making cake.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>2000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSFlour</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawCinnamon</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSCCake>10</CSCCake>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_Flour</defName>
+    <label>make flour</label>
+    <description>Make flour from wheat.</description>
+    <jobString>Making flour.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawWheat</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CSRawWheat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CSFlour>30</CSFlour>
+    </products>
+    <recipeUsers>
+      <li>TableButcher</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

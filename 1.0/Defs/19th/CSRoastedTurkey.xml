@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Turkey-->
+  <ThingDef ParentName="MealRottable">
+    <defName>CSRoastedTurkey</defName>
+    <label>Roasted turkey</label>
+    <description>Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner.</description>
+    <graphicData>
+      <texPath>Things/19th/RoastedTurkey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <WorkToMake>800</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="MealRottable">
+    <defName>CSRoastedTurkeyMeal</defName>
+    <label>Roasted turkey</label>
+    <description>Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner.</description>
+    <graphicData>
+      <texPath>Things/19th/MealRoastedTurkey</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>350</WorkToMake>
+      <Nutrition>0.97</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>CSAteRoastedTurkey</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CSAteWholeRoastedTurkey</hediffDef>
+          <severity>1.00</severity>
+          <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteRoastedTurkey</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate roasted turkey</label>
+        <description>That roasted turkey was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Hediff-->
+  <HediffDef>
+    <defName>CSAteWholeRoastedTurkey</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Full</label>
+    <labelNoun>Ate a whole roasted turkey.</labelNoun>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
+  <!--Recipe-->
+  <RecipeDef>
+    <defName>CSMake_RoastedTurkey</defName>
+    <label>make roasted turkey</label>
+    <description>Make roasted turkey.</description>
+    <jobString>Preparing christmas dinner.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>2000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Turkey</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawCarrots</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRawParsnips</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSRoastedTurkey>1</CSRoastedTurkey>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_RoastedTurkeyMeal</defName>
+    <label>cut roasted turkey into slices</label>
+    <description>Cut roasted turkey into slices.</description>
+    <jobString>Preparing christmas dinner.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>350</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSRoastedTurkey</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSRoastedTurkeyMeal>10</CSRoastedTurkeyMeal>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Hot Chocolate-->
+  <ThingDef ParentName="MealRottable">
+    <defName>CSHotChocolate</defName>
+    <label>Hot chocolate</label>
+    <description>Yummy. Hot chocolate is a heated drink consisting of shaved chocolate or melted chocolate and heated milk.</description>
+    <graphicData>
+      <texPath>Things/8th/HotChocolate</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <WorkToMake>500</WorkToMake>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.4</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAteHotChocolate</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAteHotChocolate</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>drank hot chocolate</label>
+        <description>The hot chocolate nourished my body and my soul.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipe-->
+  <RecipeDef>
+    <defName>CSMake_HotChocolate</defName>
+    <label>make hot chocolate</label>
+    <description>Make hot chocolate.</description>
+    <jobString>Making hot chocolate.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>400</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSHotChocolate>1</CSHotChocolate>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>
