@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>CSApparel_RAntlers</defName>
+    <label>reindeer antlers</label>
+    <description>With this headgear you will look like a reindeer and it gives you a bit of extra charm.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Things/5th/ReindeerAntlers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/5th/ReindeerAntlers</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

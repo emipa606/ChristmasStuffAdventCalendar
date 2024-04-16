@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Categories-->
+  <ThingCategoryDef>
+    <defName>CSCookieCat</defName>
+    <label>Cookies</label>
+    <parent>FoodMeals</parent>
+    <iconPath>Things/7th/CookieChocolate/CookieChocolate_a</iconPath>
+  </ThingCategoryDef>
+  <!--Cookies-->
+  <ThingDef ParentName="MealCooked">
+    <defName>CSPCookie</defName>
+    <label>Plain cookie</label>
+    <description>Yummy. A simple cookie and it fulfills the need for recreation.</description>
+    <graphicData>
+      <texPath>Things/7th/CookiePlain</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>350</WorkToMake>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAtePCookie</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+    </ingestible>
+    <thingCategories>
+      <li>CSCookieCat</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>CSChCookie</defName>
+    <label>Chocolate cookie</label>
+    <description>Yummy. A chocolate cookie and it fulfills the need for recreation.</description>
+    <graphicData>
+      <texPath>Things/7th/CookieChocolate</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <WorkToMake>420</WorkToMake>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAteChCookie</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+    </ingestible>
+    <thingCategories>
+      <li>CSCookieCat</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>CSCoCookie</defName>
+    <label>Cookie with sprinkles</label>
+    <description>Yummy. A simple cookie with coloured sprinkles and it fulfills the need for recreation.</description>
+    <graphicData>
+      <texPath>Things/7th/CookieColour</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>13</MarketValue>
+      <WorkToMake>400</WorkToMake>
+      <Nutrition>0.35</Nutrition>
+    </statBases>
+    <ingestible>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>CSAteCoCookie</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+    </ingestible>
+    <thingCategories>
+      <li>CSCookieCat</li>
+    </thingCategories>
+  </ThingDef>
+  <!--AteThought-->
+  <ThoughtDef>
+    <defName>CSAtePCookie</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate cookie</label>
+        <description>That christmas cake was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>CSAteChCookie</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate chocolate cookie</label>
+        <description>That christmas cake was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>CSAteCoCookie</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate cookie with sprinkles</label>
+        <description>That christmas cake was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Recipes-->
+  <RecipeDef>
+    <defName>CSMake_PCookie</defName>
+    <label>make plain cookie</label>
+    <description>Make plain cookie.</description>
+    <jobString>Making cookie.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSFlour</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSPCookie>10</CSPCookie>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_ChCookie</defName>
+    <label>make chocolate cookie</label>
+    <description>Make chocolate cookie.</description>
+    <jobString>Making cookie.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSFlour</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSChCookie>10</CSChCookie>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>CSMake_CoCookie</defName>
+    <label>make cookie with sprinkles</label>
+    <description>Make cookie with sprinkles.</description>
+    <jobString>Making cookie.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSFlour</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CSSugar</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CSCoCookie>10</CSCoCookie>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>
