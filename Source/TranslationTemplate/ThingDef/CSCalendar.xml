@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Advent calendar -->
+  <CSCalendar.label>Advent calendar</CSCalendar.label>
+  <!-- EN: a special calendar used to count the days of Advent. Starting at the 1st of december. -->
+  <CSCalendar.description>a special calendar used to count the days of Advent. Starting at the 1st of december.</CSCalendar.description>
+</LanguageData>

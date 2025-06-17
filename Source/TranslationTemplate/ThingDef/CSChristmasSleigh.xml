@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas sleigh -->
+  <CSChristmasSleigh.label>Christmas sleigh</CSChristmasSleigh.label>
+  <!-- EN: A flying sleigh for transporting present during christmas. Can transport 1000kg. Use christmas spirit as fuel.\n\nDoes not work. -->
+  <CSChristmasSleigh.description>A flying sleigh for transporting present during christmas. Can transport 1000kg. Use christmas spirit as fuel.
+
+Does not work.</CSChristmasSleigh.description>
+  <!-- EN: Christmas spirit -->
+  <CSChristmasSpirit.label>Christmas spirit</CSChristmasSpirit.label>
+  <!-- EN: The spirit of christmas. It can be used as fuel for the christmas sleigh. -->
+  <CSChristmasSpirit.description>The spirit of christmas. It can be used as fuel for the christmas sleigh.</CSChristmasSpirit.description>
+  <!-- EN: Present bag -->
+  <CSPresentBag.label>Present bag</CSPresentBag.label>
+  <!-- EN: A magical bag for transporting presents. -->
+  <CSPresentBag.description>A magical bag for transporting presents.</CSPresentBag.description>
+  <!-- EN: Skid -->
+  <CSSkid.label>Skid</CSSkid.label>
+  <!-- EN: Some Skids for santa claus's christmas sleigh. -->
+  <CSSkid.description>Some Skids for santa claus's christmas sleigh.</CSSkid.description>
+  <!-- EN: Sleigh core -->
+  <CSSleighCore.label>Sleigh core</CSSleighCore.label>
+  <!-- EN: The core of the christmas sleigh. -->
+  <CSSleighCore.description>The core of the christmas sleigh.</CSSleighCore.description>
+</LanguageData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Candied carrots -->
+  <CSCandiedCarrots.label>Candied carrots</CSCandiedCarrots.label>
+  <!-- EN: Carrots sweetened with sugar. -->
+  <CSCandiedCarrots.description>Carrots sweetened with sugar.</CSCandiedCarrots.description>
+  <!-- EN: Carrot -->
+  <CSCarrotPlant.label>Carrot</CSCarrotPlant.label>
+  <!-- EN: A plant producing carrot. -->
+  <CSCarrotPlant.description>A plant producing carrot.</CSCarrotPlant.description>
+  <!-- EN: Cheese -->
+  <CSCheese.label>Cheese</CSCheese.label>
+  <!-- EN: Cheese is a food made from milk.. -->
+  <CSCheese.description>Cheese is a food made from milk..</CSCheese.description>
+  <!-- EN: Hasselback potatoes -->
+  <CSHasselbackPotatoes.label>Hasselback potatoes</CSHasselbackPotatoes.label>
+  <!-- EN: Hasselback potatoes are halfway cut through into thin slices. -->
+  <CSHasselbackPotatoes.description>Hasselback potatoes are halfway cut through into thin slices.</CSHasselbackPotatoes.description>
+  <!-- EN: Parsnip -->
+  <CSParsnipPlant.label>Parsnip</CSParsnipPlant.label>
+  <!-- EN: A plant producing parsnip. -->
+  <CSParsnipPlant.description>A plant producing parsnip.</CSParsnipPlant.description>
+  <!-- EN: Carrot -->
+  <CSRawCarrots.label>Carrot</CSRawCarrots.label>
+  <!-- EN: Carrots. -->
+  <CSRawCarrots.description>Carrots.</CSRawCarrots.description>
+  <!-- EN: Parsnip -->
+  <CSRawParsnips.label>Parsnip</CSRawParsnips.label>
+  <!-- EN: Parsnips. -->
+  <CSRawParsnips.description>Parsnips.</CSRawParsnips.description>
+  <!-- EN: Roasted parsnips -->
+  <CSRoastedParsnips.label>Roasted parsnips</CSRoastedParsnips.label>
+  <!-- EN: Roasted parsnips. -->
+  <CSRoastedParsnips.description>Roasted parsnips.</CSRoastedParsnips.description>
+</LanguageData>

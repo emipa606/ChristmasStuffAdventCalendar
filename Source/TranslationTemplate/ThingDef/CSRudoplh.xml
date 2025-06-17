@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas reindeer -->
+  <CSChristmasReindeer.label>Christmas reindeer</CSChristmasReindeer.label>
+  <!-- EN: Christmas reindeer are medium-sized herding herbivores. They normally pull santa claus's sleigh with. You can milk them for chistmas spirit. -->
+  <CSChristmasReindeer.description>Christmas reindeer are medium-sized herding herbivores. They normally pull santa claus's sleigh with. You can milk them for chistmas spirit.</CSChristmasReindeer.description>
+  <!-- EN: left hoof -->
+  <CSChristmasReindeer.tools.left_hoof.label>left hoof</CSChristmasReindeer.tools.left_hoof.label>
+  <!-- EN: right hoof -->
+  <CSChristmasReindeer.tools.right_hoof.label>right hoof</CSChristmasReindeer.tools.right_hoof.label>
+  <!-- EN: head -->
+  <CSChristmasReindeer.tools.head.label>head</CSChristmasReindeer.tools.head.label>
+</LanguageData>

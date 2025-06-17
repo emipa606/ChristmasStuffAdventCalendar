@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Present (blue) -->
+  <CSPresentBlue.label>Present (blue)</CSPresentBlue.label>
+  <!-- EN: A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. -->
+  <CSPresentBlue.description>A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside.</CSPresentBlue.description>
+  <!-- EN: Present (green) -->
+  <CSPresentGreen.label>Present (green)</CSPresentGreen.label>
+  <!-- EN: A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. -->
+  <CSPresentGreen.description>A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside.</CSPresentGreen.description>
+  <!-- EN: Present (red) -->
+  <CSPresentRed.label>Present (red)</CSPresentRed.label>
+  <!-- EN: A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. -->
+  <CSPresentRed.description>A present for storing miscellaneous items. Items stored in this will not deteriorate, even if outside.</CSPresentRed.description>
+</LanguageData>

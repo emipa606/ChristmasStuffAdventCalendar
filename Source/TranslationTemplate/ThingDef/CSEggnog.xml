@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Eggnog -->
+  <CSEggnog.label>Eggnog</CSEggnog.label>
+  <!-- EN: Eggnog is a rich, chilled, sweetened, dairy-based beverage. -->
+  <CSEggnog.description>Eggnog is a rich, chilled, sweetened, dairy-based beverage.</CSEggnog.description>
+  <!-- EN: Drink {0} -->
+  <CSEggnog.ingestible.ingestCommandString>Drink {0}</CSEggnog.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <CSEggnog.ingestible.ingestReportString>Drinking {0}.</CSEggnog.ingestible.ingestReportString>
+  <!-- EN: Molasses -->
+  <CSMolasses.label>Molasses</CSMolasses.label>
+  <!-- EN: Un-fermented rum. This substance needs to ferment in a rum barrel before it becomes drinkable rum. -->
+  <CSMolasses.description>Un-fermented rum. This substance needs to ferment in a rum barrel before it becomes drinkable rum.</CSMolasses.description>
+  <!-- EN: Sugar cane -->
+  <CSRawSugarCane.label>Sugar cane</CSRawSugarCane.label>
+  <!-- EN: Sugar cane for rum making. -->
+  <CSRawSugarCane.description>Sugar cane for rum making.</CSRawSugarCane.description>
+  <!-- EN: Rum -->
+  <CSRum.label>Rum</CSRum.label>
+  <!-- EN: A noble alcohol. Excessive consumption can lead to alcohol blackouts and, over time, addiction. -->
+  <CSRum.description>A noble alcohol. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</CSRum.description>
+  <!-- EN: Drink {0} -->
+  <CSRum.ingestible.ingestCommandString>Drink {0}</CSRum.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <CSRum.ingestible.ingestReportString>Drinking {0}.</CSRum.ingestible.ingestReportString>
+  <!-- EN: bottle -->
+  <CSRum.tools.bottle.label>bottle</CSRum.tools.bottle.label>
+  <!-- EN: neck -->
+  <CSRum.tools.neck.label>neck</CSRum.tools.neck.label>
+  <!-- EN: Rum Barrel -->
+  <CSRumBarrel.label>Rum Barrel</CSRumBarrel.label>
+  <!-- EN: For fermenting rum. -->
+  <CSRumBarrel.description>For fermenting rum.</CSRumBarrel.description>
+  <!-- EN: Sugar cane -->
+  <CSSugarCanePlant.label>Sugar cane</CSSugarCanePlant.label>
+  <!-- EN: A plant producing sugar cane for rum making. -->
+  <CSSugarCanePlant.description>A plant producing sugar cane for rum making.</CSSugarCanePlant.description>
+</LanguageData>

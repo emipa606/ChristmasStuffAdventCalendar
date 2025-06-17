@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make christmas cake -->
+  <CSMake_CCake.label>make christmas cake</CSMake_CCake.label>
+  <!-- EN: Make christmas cake. -->
+  <CSMake_CCake.description>Make christmas cake.</CSMake_CCake.description>
+  <!-- EN: Making cake. -->
+  <CSMake_CCake.jobString>Making cake.</CSMake_CCake.jobString>
+  <!-- EN: make flour -->
+  <CSMake_Flour.label>make flour</CSMake_Flour.label>
+  <!-- EN: Make flour from wheat. -->
+  <CSMake_Flour.description>Make flour from wheat.</CSMake_Flour.description>
+  <!-- EN: Making flour. -->
+  <CSMake_Flour.jobString>Making flour.</CSMake_Flour.jobString>
+</LanguageData>

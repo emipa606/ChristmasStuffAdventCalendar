@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make chocolate cookie -->
+  <CSMake_ChCookie.label>make chocolate cookie</CSMake_ChCookie.label>
+  <!-- EN: Make chocolate cookie. -->
+  <CSMake_ChCookie.description>Make chocolate cookie.</CSMake_ChCookie.description>
+  <!-- EN: Making cookie. -->
+  <CSMake_ChCookie.jobString>Making cookie.</CSMake_ChCookie.jobString>
+  <!-- EN: make cookie with sprinkles -->
+  <CSMake_CoCookie.label>make cookie with sprinkles</CSMake_CoCookie.label>
+  <!-- EN: Make cookie with sprinkles. -->
+  <CSMake_CoCookie.description>Make cookie with sprinkles.</CSMake_CoCookie.description>
+  <!-- EN: Making cookie. -->
+  <CSMake_CoCookie.jobString>Making cookie.</CSMake_CoCookie.jobString>
+  <!-- EN: make plain cookie -->
+  <CSMake_PCookie.label>make plain cookie</CSMake_PCookie.label>
+  <!-- EN: Make plain cookie. -->
+  <CSMake_PCookie.description>Make plain cookie.</CSMake_PCookie.description>
+  <!-- EN: Making cookie. -->
+  <CSMake_PCookie.jobString>Making cookie.</CSMake_PCookie.jobString>
+</LanguageData>

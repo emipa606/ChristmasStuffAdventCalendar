@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas lighting -->
+  <CSChristmasLighting.label>Christmas lighting</CSChristmasLighting.label>
+  <!-- EN: A bundle of electrical cables with light bulbs for moving power around in christmas style. Can be placed under walls and other buildings. -->
+  <CSChristmasLighting.description>A bundle of electrical cables with light bulbs for moving power around in christmas style. Can be placed under walls and other buildings.</CSChristmasLighting.description>
+  <!-- EN: light bulb -->
+  <CSLightBulb.label>light bulb</CSLightBulb.label>
+  <!-- EN: A simple light bulb used for christmas lighting. -->
+  <CSLightBulb.description>A simple light bulb used for christmas lighting.</CSLightBulb.description>
+</LanguageData>

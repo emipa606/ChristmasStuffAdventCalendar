@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make santa cloth -->
+  <CSMake_SantaCloth.label>make santa cloth</CSMake_SantaCloth.label>
+  <!-- EN: Make santa cloth from cloth -->
+  <CSMake_SantaCloth.description>Make santa cloth from cloth</CSMake_SantaCloth.description>
+  <!-- EN: Making cloth. -->
+  <CSMake_SantaCloth.jobString>Making cloth.</CSMake_SantaCloth.jobString>
+</LanguageData>

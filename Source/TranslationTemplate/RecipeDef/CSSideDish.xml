@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make candied carrots -->
+  <CSMake_CandiedCarrots.label>make candied carrots</CSMake_CandiedCarrots.label>
+  <!-- EN: Make candied carrots. -->
+  <CSMake_CandiedCarrots.description>Make candied carrots.</CSMake_CandiedCarrots.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_CandiedCarrots.jobString>Preparing christmas dinner.</CSMake_CandiedCarrots.jobString>
+  <!-- EN: make cheese -->
+  <CSMake_Cheese.label>make cheese</CSMake_Cheese.label>
+  <!-- EN: Make cheese. -->
+  <CSMake_Cheese.description>Make cheese.</CSMake_Cheese.description>
+  <!-- EN: Making cheese. -->
+  <CSMake_Cheese.jobString>Making cheese.</CSMake_Cheese.jobString>
+  <!-- EN: make hasselback potatoes -->
+  <CSMake_HasselbackPotatoes.label>make hasselback potatoes</CSMake_HasselbackPotatoes.label>
+  <!-- EN: Make hasselback potatoes. -->
+  <CSMake_HasselbackPotatoes.description>Make hasselback potatoes.</CSMake_HasselbackPotatoes.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_HasselbackPotatoes.jobString>Preparing christmas dinner.</CSMake_HasselbackPotatoes.jobString>
+  <!-- EN: make roasted parsnips -->
+  <CSMake_RoastedParsnips.label>make roasted parsnips</CSMake_RoastedParsnips.label>
+  <!-- EN: Make roasted parsnips. -->
+  <CSMake_RoastedParsnips.description>Make roasted parsnips.</CSMake_RoastedParsnips.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_RoastedParsnips.jobString>Preparing christmas dinner.</CSMake_RoastedParsnips.jobString>
+</LanguageData>

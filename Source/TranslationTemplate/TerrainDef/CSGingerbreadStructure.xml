@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: burned gingerbread -->
+  <CSBurnedGingerbread.label>burned gingerbread</CSBurnedGingerbread.label>
+  <!-- EN: Burned-out wood plank flooring. -->
+  <CSBurnedGingerbread.description>Burned-out wood plank flooring.</CSBurnedGingerbread.description>
+  <!-- EN: burned icing -->
+  <CSBurnedIcing.label>burned icing</CSBurnedIcing.label>
+  <!-- EN: Burned-out carpet. -->
+  <CSBurnedIcing.description>Burned-out carpet.</CSBurnedIcing.description>
+  <!-- EN: Gingerbread floor -->
+  <CSGingerbreadFloor.label>Gingerbread floor</CSGingerbreadFloor.label>
+  <!-- EN: A floor made of gingerbread. -->
+  <CSGingerbreadFloor.description>A floor made of gingerbread.</CSGingerbreadFloor.description>
+  <!-- EN: Icing floor -->
+  <CSIcingFloor.label>Icing floor</CSIcingFloor.label>
+  <!-- EN: A floor made of icing. -->
+  <CSIcingFloor.description>A floor made of icing.</CSIcingFloor.description>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Hot chocolate -->
+  <CSHotChocolate.label>Hot chocolate</CSHotChocolate.label>
+  <!-- EN: Yummy. Hot chocolate is a heated drink consisting of shaved chocolate or melted chocolate and heated milk. -->
+  <CSHotChocolate.description>Yummy. Hot chocolate is a heated drink consisting of shaved chocolate or melted chocolate and heated milk.</CSHotChocolate.description>
+  <!-- EN: Drink {0} -->
+  <CSHotChocolate.ingestible.ingestCommandString>Drink {0}</CSHotChocolate.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <CSHotChocolate.ingestible.ingestReportString>Drinking {0}.</CSHotChocolate.ingestible.ingestReportString>
+</LanguageData>

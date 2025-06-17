@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Almond tree -->
+  <CSAlmondTree.label>Almond tree</CSAlmondTree.label>
+  <!-- EN: A tree producing almonds. -->
+  <CSAlmondTree.description>A tree producing almonds.</CSAlmondTree.description>
+  <!-- EN: Raisins -->
+  <CSRaisins.label>Raisins</CSRaisins.label>
+  <!-- EN: Dried grapes. -->
+  <CSRaisins.description>Dried grapes.</CSRaisins.description>
+  <!-- EN: Almond -->
+  <CSRawAlmond.label>Almond</CSRawAlmond.label>
+  <!-- EN: A drupe from the almond tree. (It's not a nut) -->
+  <CSRawAlmond.description>A drupe from the almond tree. (It's not a nut)</CSRawAlmond.description>
+  <!-- EN: Stollen -->
+  <CSStollen.label>Stollen</CSStollen.label>
+  <!-- EN: Stollen is a fruit bread of nuts, spices, and dried or candied fruit, coated with powdered sugar or icing sugar. It is a traditional German bread eaten during the Christmas season -->
+  <CSStollen.description>Stollen is a fruit bread of nuts, spices, and dried or candied fruit, coated with powdered sugar or icing sugar. It is a traditional German bread eaten during the Christmas season</CSStollen.description>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ate chocolate cookie -->
+  <CSAteChCookie.stages.ate_chocolate_cookie.label>ate chocolate cookie</CSAteChCookie.stages.ate_chocolate_cookie.label>
+  <!-- EN: That christmas cake was amazing. It nourished my body and my soul. -->
+  <CSAteChCookie.stages.ate_chocolate_cookie.description>That christmas cake was amazing. It nourished my body and my soul.</CSAteChCookie.stages.ate_chocolate_cookie.description>
+  <!-- EN: ate cookie with sprinkles -->
+  <CSAteCoCookie.stages.ate_cookie_with_sprinkles.label>ate cookie with sprinkles</CSAteCoCookie.stages.ate_cookie_with_sprinkles.label>
+  <!-- EN: That christmas cake was amazing. It nourished my body and my soul. -->
+  <CSAteCoCookie.stages.ate_cookie_with_sprinkles.description>That christmas cake was amazing. It nourished my body and my soul.</CSAteCoCookie.stages.ate_cookie_with_sprinkles.description>
+  <!-- EN: ate cookie -->
+  <CSAtePCookie.stages.ate_cookie.label>ate cookie</CSAtePCookie.stages.ate_cookie.label>
+  <!-- EN: That christmas cake was amazing. It nourished my body and my soul. -->
+  <CSAtePCookie.stages.ate_cookie.description>That christmas cake was amazing. It nourished my body and my soul.</CSAtePCookie.stages.ate_cookie.description>
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas bed -->
+  <CSCBed.label>Christmas bed</CSCBed.label>
+  <!-- EN: A cozy mattress and sheets on a frame for resting in christmas style. -->
+  <CSCBed.description>A cozy mattress and sheets on a frame for resting in christmas style.</CSCBed.description>
+  <!-- EN: Christmas double bed -->
+  <CSCDoubleBed.label>Christmas double bed</CSCDoubleBed.label>
+  <!-- EN: A simple double-wide bed that fits two people in christmas style. -->
+  <CSCDoubleBed.description>A simple double-wide bed that fits two people in christmas style.</CSCDoubleBed.description>
+  <!-- EN: Chistmas dresser -->
+  <CSCDresser.label>Chistmas dresser</CSCDresser.label>
+  <!-- EN: A dresser in christmas style. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect. -->
+  <CSCDresser.description>A dresser in christmas style. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</CSCDresser.description>
+  <!-- EN: Christmas end table -->
+  <CSCEndTable.label>Christmas end table</CSCEndTable.label>
+  <!-- EN: A small bedside table which makes nearby beds a little bit more comfortable in christmas style. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. -->
+  <CSCEndTable.description>A small bedside table which makes nearby beds a little bit more comfortable in christmas style. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</CSCEndTable.description>
+</LanguageData>

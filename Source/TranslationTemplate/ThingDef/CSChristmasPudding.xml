@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas pudding -->
+  <CSCPudding.label>Christmas pudding</CSCPudding.label>
+  <!-- EN: Christmas pudding is a type of pudding traditionally served as part of the Christmas dinner. -->
+  <CSCPudding.description>Christmas pudding is a type of pudding traditionally served as part of the Christmas dinner.</CSCPudding.description>
+  <!-- EN: Suet -->
+  <CSSuet.label>Suet</CSSuet.label>
+  <!-- EN: Suet is the raw, hard fat of beef or mutton found around the loins and kidneys. -->
+  <CSSuet.description>Suet is the raw, hard fat of beef or mutton found around the loins and kidneys.</CSSuet.description>
+</LanguageData>

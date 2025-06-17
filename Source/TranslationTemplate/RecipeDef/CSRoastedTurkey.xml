@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make roasted turkey -->
+  <CSMake_RoastedTurkey.label>make roasted turkey</CSMake_RoastedTurkey.label>
+  <!-- EN: Make roasted turkey. -->
+  <CSMake_RoastedTurkey.description>Make roasted turkey.</CSMake_RoastedTurkey.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_RoastedTurkey.jobString>Preparing christmas dinner.</CSMake_RoastedTurkey.jobString>
+  <!-- EN: cut roasted turkey into slices -->
+  <CSMake_RoastedTurkeyMeal.label>cut roasted turkey into slices</CSMake_RoastedTurkeyMeal.label>
+  <!-- EN: Cut roasted turkey into slices. -->
+  <CSMake_RoastedTurkeyMeal.description>Cut roasted turkey into slices.</CSMake_RoastedTurkeyMeal.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_RoastedTurkeyMeal.jobString>Preparing christmas dinner.</CSMake_RoastedTurkeyMeal.jobString>
+</LanguageData>

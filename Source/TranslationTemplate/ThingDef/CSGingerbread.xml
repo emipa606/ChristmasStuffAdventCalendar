@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Gingerbread -->
+  <CSGingerbread.label>Gingerbread</CSGingerbread.label>
+  <!-- EN: Yummy. Gingerbread fulfills the need for recreation and can be used as a building material. -->
+  <CSGingerbread.description>Yummy. Gingerbread fulfills the need for recreation and can be used as a building material.</CSGingerbread.description>
+  <!-- EN: Gingerbread house -->
+  <CSGingerbreadHouse.label>Gingerbread house</CSGingerbreadHouse.label>
+  <!-- EN: A gingerbread house is a novelty confectionery shaped like a building that is made of cookie dough, cut and baked into appropriate components like walls and roofing. -->
+  <CSGingerbreadHouse.description>A gingerbread house is a novelty confectionery shaped like a building that is made of cookie dough, cut and baked into appropriate components like walls and roofing.</CSGingerbreadHouse.description>
+  <!-- EN: Gingerbread men -->
+  <CSGingerbreadMen.label>Gingerbread men</CSGingerbreadMen.label>
+  <!-- EN: Yummy. The Gingerbread men fulfills the need for recreation and can be used as a building material. -->
+  <CSGingerbreadMen.description>Yummy. The Gingerbread men fulfills the need for recreation and can be used as a building material.</CSGingerbreadMen.description>
+  <!-- EN: Ginger root -->
+  <CSGingerRootPlant.label>Ginger root</CSGingerRootPlant.label>
+  <!-- EN: A plant producing ginger roots for gingerbread. -->
+  <CSGingerRootPlant.description>A plant producing ginger roots for gingerbread.</CSGingerRootPlant.description>
+  <!-- EN: Icing -->
+  <CSIcing.label>Icing</CSIcing.label>
+  <!-- EN: A sweet thing used for decorating gingerbread cookies and gingerbread houses. -->
+  <CSIcing.description>A sweet thing used for decorating gingerbread cookies and gingerbread houses.</CSIcing.description>
+  <!-- EN: Ginger -->
+  <CSRawGinger.label>Ginger</CSRawGinger.label>
+  <!-- EN: Ginger is a very popular spice and it is a fragrant kitchen spice -->
+  <CSRawGinger.description>Ginger is a very popular spice and it is a fragrant kitchen spice</CSRawGinger.description>
+</LanguageData>

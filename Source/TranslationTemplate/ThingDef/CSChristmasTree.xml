@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Christmas pine -->
+  <CSChristmasPine.label>Christmas pine</CSChristmasPine.label>
+  <!-- EN: A pine for christmas. -->
+  <CSChristmasPine.description>A pine for christmas.</CSChristmasPine.description>
+  <!-- EN: Christmas pine -->
+  <CSChristmasPineTree.label>Christmas pine</CSChristmasPineTree.label>
+  <!-- EN: A pine for christmas. -->
+  <CSChristmasPineTree.description>A pine for christmas.</CSChristmasPineTree.description>
+  <!-- EN: Christmas tree -->
+  <CSChristmasTree.label>Christmas tree</CSChristmasTree.label>
+  <!-- EN: A Christmas tree is a decorated pine associated with the celebration of Christmas. -->
+  <CSChristmasTree.description>A Christmas tree is a decorated pine associated with the celebration of Christmas.</CSChristmasTree.description>
+</LanguageData>

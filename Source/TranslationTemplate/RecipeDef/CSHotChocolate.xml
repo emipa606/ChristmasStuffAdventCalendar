@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make hot chocolate -->
+  <CSMake_HotChocolate.label>make hot chocolate</CSMake_HotChocolate.label>
+  <!-- EN: Make hot chocolate. -->
+  <CSMake_HotChocolate.description>Make hot chocolate.</CSMake_HotChocolate.description>
+  <!-- EN: Making hot chocolate. -->
+  <CSMake_HotChocolate.jobString>Making hot chocolate.</CSMake_HotChocolate.jobString>
+</LanguageData>

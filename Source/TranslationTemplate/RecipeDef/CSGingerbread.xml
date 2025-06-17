@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make gingerbread -->
+  <CSMake_Gingerbread.label>make gingerbread</CSMake_Gingerbread.label>
+  <!-- EN: Make gingerbread. -->
+  <CSMake_Gingerbread.description>Make gingerbread.</CSMake_Gingerbread.description>
+  <!-- EN: Making gingerbread. -->
+  <CSMake_Gingerbread.jobString>Making gingerbread.</CSMake_Gingerbread.jobString>
+  <!-- EN: make gingerbread men -->
+  <CSMake_GingerbreadMen.label>make gingerbread men</CSMake_GingerbreadMen.label>
+  <!-- EN: Make gingerbread men. -->
+  <CSMake_GingerbreadMen.description>Make gingerbread men.</CSMake_GingerbreadMen.description>
+  <!-- EN: Making gingerbread men. -->
+  <CSMake_GingerbreadMen.jobString>Making gingerbread men.</CSMake_GingerbreadMen.jobString>
+  <!-- EN: make icing -->
+  <CSMake_Icing.label>make icing</CSMake_Icing.label>
+  <!-- EN: Make icing from sugar. -->
+  <CSMake_Icing.description>Make icing from sugar.</CSMake_Icing.description>
+  <!-- EN: Making icing. -->
+  <CSMake_Icing.jobString>Making icing.</CSMake_Icing.jobString>
+</LanguageData>

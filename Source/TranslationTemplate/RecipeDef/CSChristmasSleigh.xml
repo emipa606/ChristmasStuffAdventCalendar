@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: tailor present bag -->
+  <CSMake_PresentBag.label>tailor present bag</CSMake_PresentBag.label>
+  <!-- EN: Tailor present bag. -->
+  <CSMake_PresentBag.description>Tailor present bag.</CSMake_PresentBag.description>
+  <!-- EN: Tailoring. -->
+  <CSMake_PresentBag.jobString>Tailoring.</CSMake_PresentBag.jobString>
+  <!-- EN: smith skids -->
+  <CSMake_Skids.label>smith skids</CSMake_Skids.label>
+  <!-- EN: smith skids. -->
+  <CSMake_Skids.description>smith skids.</CSMake_Skids.description>
+  <!-- EN: Smithing skids. -->
+  <CSMake_Skids.jobString>Smithing skids.</CSMake_Skids.jobString>
+  <!-- EN: smith sleigh core -->
+  <CSMake_SleighCore.label>smith sleigh core</CSMake_SleighCore.label>
+  <!-- EN: smith sleigh core. -->
+  <CSMake_SleighCore.description>smith sleigh core.</CSMake_SleighCore.description>
+  <!-- EN: Smithing sleigh core. -->
+  <CSMake_SleighCore.jobString>Smithing sleigh core.</CSMake_SleighCore.jobString>
+</LanguageData>

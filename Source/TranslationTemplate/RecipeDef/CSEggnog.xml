@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make eggnog -->
+  <CSMake_Eggnog.label>make eggnog</CSMake_Eggnog.label>
+  <!-- EN: Make eggnog. -->
+  <CSMake_Eggnog.description>Make eggnog.</CSMake_Eggnog.description>
+  <!-- EN: Making eggnog. -->
+  <CSMake_Eggnog.jobString>Making eggnog.</CSMake_Eggnog.jobString>
+  <!-- EN: make molasses -->
+  <CSMake_Molasses.label>make molasses</CSMake_Molasses.label>
+  <!-- EN: Make molasses from sugar cane. -->
+  <CSMake_Molasses.description>Make molasses from sugar cane.</CSMake_Molasses.description>
+  <!-- EN: Making molasses. -->
+  <CSMake_Molasses.jobString>Making molasses.</CSMake_Molasses.jobString>
+</LanguageData>

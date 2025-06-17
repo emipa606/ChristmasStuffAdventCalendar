@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Door-->
+  <ThingDef ParentName="BuildingBase" Name="CSDoorBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <category>Building</category>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="CSDoorBase">
+    <defName>CSGingerbreadDoor</defName>
+    <label>Gingerbread door</label>
+    <description>Divides rooms. Gingerbread doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>850</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/15th/DoorGingerbread_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <costList>
+      <CSGingerbread>25</CSGingerbread>
+    </costList>
+    <uiIconPath>Things/15th/DoorGingerbread_MenuIcon</uiIconPath>
+    <designationHotKey>Misc1</designationHotKey>
+  </ThingDef>
+  <!--Wall-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CSGingerbreadWall</defName>
+    <label>Gingerbread wall</label>
+    <description>An impassable wall made of gingerbread. Capable of holding up a roof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/15th/WallGingerbread</texPath>
+      <!--<graphicClass>Graphic_Appearances</graphicClass>-->
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <costList>
+      <CSGingerbread>5</CSGingerbread>
+    </costList>
+    <uiIconPath>Things/15th/WallGingerbread_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>
+  <!--Floor-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>CSGingerbreadFloor</defName>
+    <label>Gingerbread floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A floor made of gingerbread.</description>
+    <texturePath>Things/15th/FloorGingerbread</texturePath>
+    <burnedDef>CSBurnedGingerbread</burnedDef>
+    <!--<color>(108,78,55)</color>-->
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>80</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <costList>
+      <CSGingerbread>3</CSGingerbread>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CSIcingFloor</defName>
+    <label>Icing floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A floor made of icing.</description>
+    <texturePath>Things/15th/FloorIcing</texturePath>
+    <burnedDef>CSBurnedIcing</burnedDef>
+    <!--<color>(108,78,55)</color>-->
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>80</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <costList>
+      <CSIcing>2</CSIcing>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>
+  <TerrainDef ParentName="BurnedFloorBase">
+    <defName>CSBurnedGingerbread</defName>
+    <label>burned gingerbread</label>
+    <renderPrecedence>251</renderPrecedence>
+    <description>Burned-out wood plank flooring.</description>
+    <texturePath>Terrain/Surfaces/BurnedCarpet</texturePath>
+    <edgeType>FadeRough</edgeType>
+  </TerrainDef>
+  <TerrainDef ParentName="BurnedFloorBase">
+    <defName>CSBurnedIcing</defName>
+    <label>burned icing</label>
+    <renderPrecedence>201</renderPrecedence>
+    <description>Burned-out carpet.</description>
+    <texturePath>Terrain/Surfaces/BurnedCarpet</texturePath>
+    <edgeType>FadeRough</edgeType>
+  </TerrainDef>
+</Defs>

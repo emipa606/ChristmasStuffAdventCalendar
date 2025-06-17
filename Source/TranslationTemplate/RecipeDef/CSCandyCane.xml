@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make candy cane -->
+  <CSMake_CandyCane.label>make candy cane</CSMake_CandyCane.label>
+  <!-- EN: Make candy cane. -->
+  <CSMake_CandyCane.description>Make candy cane.</CSMake_CandyCane.description>
+  <!-- EN: Making candy cane. -->
+  <CSMake_CandyCane.jobString>Making candy cane.</CSMake_CandyCane.jobString>
+</LanguageData>

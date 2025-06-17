@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make christmas pudding -->
+  <CSMake_CPudding.label>make christmas pudding</CSMake_CPudding.label>
+  <!-- EN: Make christmas pudding. -->
+  <CSMake_CPudding.description>Make christmas pudding.</CSMake_CPudding.description>
+  <!-- EN: Preparing christmas dinner. -->
+  <CSMake_CPudding.jobString>Preparing christmas dinner.</CSMake_CPudding.jobString>
+  <!-- EN: Extract suet -->
+  <CSMake_Suet.label>Extract suet</CSMake_Suet.label>
+  <!-- EN: Extract suet from cow. -->
+  <CSMake_Suet.description>Extract suet from cow.</CSMake_Suet.description>
+  <!-- EN: Butchering. -->
+  <CSMake_Suet.jobString>Butchering.</CSMake_Suet.jobString>
+</LanguageData>

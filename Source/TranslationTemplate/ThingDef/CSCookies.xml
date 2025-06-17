@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Chocolate cookie -->
+  <CSChCookie.label>Chocolate cookie</CSChCookie.label>
+  <!-- EN: Yummy. A chocolate cookie and it fulfills the need for recreation. -->
+  <CSChCookie.description>Yummy. A chocolate cookie and it fulfills the need for recreation.</CSChCookie.description>
+  <!-- EN: Cookie with sprinkles -->
+  <CSCoCookie.label>Cookie with sprinkles</CSCoCookie.label>
+  <!-- EN: Yummy. A simple cookie with coloured sprinkles and it fulfills the need for recreation. -->
+  <CSCoCookie.description>Yummy. A simple cookie with coloured sprinkles and it fulfills the need for recreation.</CSCoCookie.description>
+  <!-- EN: Plain cookie -->
+  <CSPCookie.label>Plain cookie</CSPCookie.label>
+  <!-- EN: Yummy. A simple cookie and it fulfills the need for recreation. -->
+  <CSPCookie.description>Yummy. A simple cookie and it fulfills the need for recreation.</CSPCookie.description>
+</LanguageData>

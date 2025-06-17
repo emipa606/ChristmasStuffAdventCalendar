@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: dry grapes into raisins -->
+  <CSMake_Raisins.label>dry grapes into raisins</CSMake_Raisins.label>
+  <!-- EN: Dry grapes into raisins. -->
+  <CSMake_Raisins.description>Dry grapes into raisins.</CSMake_Raisins.description>
+  <!-- EN: Drying grapes. -->
+  <CSMake_Raisins.jobString>Drying grapes.</CSMake_Raisins.jobString>
+  <!-- EN: make stollen -->
+  <CSMake_Stollen.label>make stollen</CSMake_Stollen.label>
+  <!-- EN: Make plain stollen. -->
+  <CSMake_Stollen.description>Make plain stollen.</CSMake_Stollen.description>
+  <!-- EN: Making stollen. -->
+  <CSMake_Stollen.jobString>Making stollen.</CSMake_Stollen.jobString>
+</LanguageData>

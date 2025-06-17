@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: smelt stone chunks into light bulbs -->
+  <CSMake_LightBulb.label>smelt stone chunks into light bulbs</CSMake_LightBulb.label>
+  <!-- EN: Turn the stone chunks into light bulbs. -->
+  <CSMake_LightBulb.description>Turn the stone chunks into light bulbs.</CSMake_LightBulb.description>
+  <!-- EN: Smelting stone chunks into light bulbs. -->
+  <CSMake_LightBulb.jobString>Smelting stone chunks into light bulbs.</CSMake_LightBulb.jobString>
+</LanguageData>

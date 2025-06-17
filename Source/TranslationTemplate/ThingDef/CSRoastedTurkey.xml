@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Roasted turkey -->
+  <CSRoastedTurkey.label>Roasted turkey</CSRoastedTurkey.label>
+  <!-- EN: Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner. -->
+  <CSRoastedTurkey.description>Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner.</CSRoastedTurkey.description>
+  <!-- EN: Roasted turkey -->
+  <CSRoastedTurkeyMeal.label>Roasted turkey</CSRoastedTurkeyMeal.label>
+  <!-- EN: Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner. -->
+  <CSRoastedTurkeyMeal.description>Turkeys are traditionally eaten as the main course of Thanksgiving dinner or Christmas dinner.</CSRoastedTurkeyMeal.description>
+</LanguageData>
