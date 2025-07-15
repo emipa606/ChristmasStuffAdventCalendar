@@ -139,7 +139,7 @@
     <label>Gingerbread floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>A floor made of gingerbread.</description>
-    <texturePath>Things/15th/FloorGingerbread</texturePath>
+    <texturePath>Things/15th/Terrain/FloorGingerbread</texturePath>
     <burnedDef>CSBurnedGingerbread</burnedDef>
     <!--<color>(108,78,55)</color>-->
     <statBases>
@@ -158,7 +158,7 @@
     <label>Icing floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>A floor made of icing.</description>
-    <texturePath>Things/15th/FloorIcing</texturePath>
+    <texturePath>Things/15th/Terrain/FloorIcing</texturePath>
     <burnedDef>CSBurnedIcing</burnedDef>
     <!--<color>(108,78,55)</color>-->
     <statBases>
