@@ -3,13 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "2",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-07-15T20:40:16.285353+02:00",
+  "LastXmlCleaning": "2025-08-08T21:51:49.2201594+02:00",
   "SocialImageSet": true,
   "SearchTags": " festive",
   "Patches": true,
   "Defs": true,
   "Assemblies": false,
   "LinesOfCode": 0,
-  "LinesOfXML": 173873,
-  "CodeBaseSize": 83
+  "LinesOfXML": 173981,
+  "CodeBaseSize": 82
 }

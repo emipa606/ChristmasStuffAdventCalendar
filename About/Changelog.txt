@@ -1,5 +1,8 @@
 # Changelog for ChristmasStuffAdventCalendar
 
+1.6.2 - Lighting should now be buildable in corners
+
+
 1.6.1 - Reupload with fixed asset bundle, terrain has specific bundle-properties
 
 
