@@ -1,5 +1,8 @@
 # Changelog for ChristmasStuffAdventCalendar
 
+1.6.3 - Fixed dependency
+
+
 1.6.2 - Lighting should now be buildable in corners
 
 

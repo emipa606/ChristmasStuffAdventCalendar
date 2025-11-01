@@ -17,33 +17,33 @@
     <li>
       <packageId>syrchalis.processor.framework</packageId>
       <displayName>[SYR] Processor Framework</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2633514537</steamWorkshopUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3210544395</steamWorkshopUrl>
       <downloadUrl>https://github.com/Syrchalis/ProcessorFramework/releases/latest</downloadUrl>
     </li>
   </modDependencies>
   <loadAfter>
     <li>syrchalis.processor.framework</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://i.postimg.cc/1X4HT06h/Info.png[/img]
 Update of FantasyFans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1925575754
 
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke[/url]
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://i.postimg.cc/8csH3dWV/Notice.png[/img]
 
 [table]
     [tr]
-        [td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-        [td][url=https://github.com/emipa606/ChristmasStuffAdventCalendar][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+        [td][url=https://discord.gg/h5TY6DA][img]https://i.postimg.cc/T1h9SjbF/Discord.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/ChristmasStuffAdventCalendar][img]https://i.postimg.cc/fykKF7X4/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
-        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+        [td][img]https://i.postimg.cc/MHXD40RW/Safe-To-Add.png[/img][/td]
+        [td][img]https://i.postimg.cc/brdTM0bP/Remove-May-Work.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://i.postimg.cc/hvhrw8xB/Original-Description.png[/img]
 Have you ever wanted to have christmas/xmas stuff in Rimworld. Now you can.
 
 This mod adds 24 different things:
@@ -79,11 +79,11 @@ Can be safely added to existing saves.
 
 If you find things unbalanced, please make suggestions for improvement.
 
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
@@ -91,5 +91,5 @@ If you find things unbalanced, please make suggestions for improvement.
 [/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2441048499][img]https://img.shields.io/github/v/release/emipa606/ChristmasStuffAdventCalendar?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  festive</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>
